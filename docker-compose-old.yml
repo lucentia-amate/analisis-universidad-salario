@@ -1,0 +1,19 @@
+services:
+  jupyter:
+    image: jupyter/scipy-notebook:latest
+    pull_policy: always
+    container_name: jupyter
+    environment:
+      HOME: /home/jovyan
+    volumes:
+      - ./src/notebooks:/home/jovyan/work
+      - ./src/data:/data
+      - ./requirements.txt:/tmp/requirements.txt:ro
+    working_dir: /home/jovyan/work
+    ports:
+      - "127.0.0.1:8888:8888"
+    command: >-
+      bash -c "pip install --no-cache-dir -r /tmp/requirements.txt &&
+      start-notebook.py --ip=0.0.0.0 --no-browser
+      --ServerApp.token='' --ServerApp.password=''"
+    restart: unless-stopped

@@ -1,0 +1,19 @@
+{
+ "descripcion": "Universidad de Alicante, retribuciones PDI funcionario, dedicacion TC: importe mensual total y total anual. La relacion anual/mensual (~13,7 pagas equivalentes, no 14) se extrapola a las series de profesorado.",
+ "fuentes": {
+  "2025": "https://sgp.ua.es/es/nominas-accion-social/nominas/documentos/2025/pdi-2025.pdf",
+  "2026": "https://sgp.ua.es/es/nominas-accion-social/nominas/tablas-retributivas/2026/pdi-2-2026.pdf"
+ },
+ "posiciones": {
+  "TitularUniversidad": {
+   "fila": "Profesor Titular de Universidad - Catedratico de Escuela Universitaria, TC",
+   "2025": {"mensual": 2910.74, "anual": 39703.73},
+   "2026": {"mensual": 2954.41, "anual": 40299.36}
+  },
+  "CatedraticoUniversidad": {
+   "fila": "Catedratico de Universidad, TC",
+   "2025": {"mensual": 3644.88, "anual": 49981.65},
+   "2026": {"mensual": 3699.56, "anual": 50731.46}
+  }
+ }
+}
